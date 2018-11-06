@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AppleActivity" />
+        <activity android:name=".AvocadoActivity" />
+        <activity android:name=".BananaActivity" />
+        <activity android:name=".BlueberryActivity"></activity>
     </application>
 
 </manifest>

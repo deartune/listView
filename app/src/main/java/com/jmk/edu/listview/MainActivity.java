@@ -1,5 +1,6 @@
 package com.jmk.edu.listview;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,10 +28,32 @@ ListView listView;
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        String text = parent.getItemAtPosition(position).toString();
-        Toast.makeText(MainActivity.this ,text,Toast.LENGTH_SHORT).show();
+        if(position==0){
+            Intent intent=null;
+            intent = new Intent(this,AppleActivity.class);
+            startActivity(intent);
+        }
+        if(position==1){
+            Intent intent=null;
+            intent = new Intent(this,AvocadoActivity.class);
+            startActivity(intent);
+        }
+        if(position==2){
+            Intent intent=null;
+            intent = new Intent(this,BananaActivity.class);
+            startActivity(intent);
+        }
+        if(position==3){
+            Intent intent=null;
+            intent = new Intent(this,BlueberryActivity.class);
+            startActivity(intent);
+        }
+
+
+       // String text = parent.getItemAtPosition(position).toString();
+       // Toast.makeText(MainActivity.this ,text,Toast.LENGTH_SHORT).show();
     }
-// 관련 Activity 이동 구현
+
 
 
 
